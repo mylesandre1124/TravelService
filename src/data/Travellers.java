@@ -16,11 +16,13 @@ public class Travellers {
     }
 
     private static ArrayList<Traveller> getTravellers() {
-        Traveller bill = new Traveller("Bill Bryson", 3908279873L);
-        Traveller myles = new Traveller("Myles Andre", 7639973021L);
-        Traveller jeff = new Traveller("Jeff Adkisson", 7359027643L);
+        Traveller poePickles = new Traveller("Poe Pickles", 3908732839L);
+        Traveller guest1 = new Traveller("Guest #1", 7639390873L);
+        Traveller guest2 = new Traveller("Guest #2", 7353939083L);
+        Traveller guest3 = new Traveller("Guest #3", 7723932917L);
+        Traveller guest4 = new Traveller("Guest #4", 7013017924L);
 
-        return new ArrayList<>(Arrays.asList(bill, myles, jeff));
+        return new ArrayList<>(Arrays.asList(poePickles, guest1, guest2, guest3, guest4));
     }
 
 
