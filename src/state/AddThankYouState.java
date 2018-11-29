@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class AddThankYouState extends TripState {
     protected AddThankYouState(TripContext tripContext) {
-        super(tripContext);
+        super(tripContext, Status.AddThankYou);
     }
 
     @Override
@@ -22,6 +22,8 @@ public class AddThankYouState extends TripState {
                 System.out.println("Invalid input entered. Try again");
             }
         }
+
+        System.out.println();
 
         getTripContext().getTrip().setThankYouNote(thankYouNote);
         getTripContext().changeState(new ShowItineraryState(getTripContext()));

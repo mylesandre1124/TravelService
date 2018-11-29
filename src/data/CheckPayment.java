@@ -22,6 +22,6 @@ public class CheckPayment extends Payment {
 
     @Override
     public String toString() {
-        return super.toString() + "Check #: " + getCheckNumber();
+        return "Check #: " + getCheckNumber() + "\n" + getAmountPaid();
     }
 }

@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class AddTravellersState extends TripState {
     protected AddTravellersState(TripContext tripContext) {
-        super(tripContext);
+        super(tripContext, Status.AddTravellers);
     }
 
     @Override

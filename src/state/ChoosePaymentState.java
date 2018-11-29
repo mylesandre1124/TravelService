@@ -9,7 +9,7 @@ public class ChoosePaymentState extends TripState {
     private static final String CREDIT_CARD = "credit";
 
     protected ChoosePaymentState(TripContext tripContext) {
-        super(tripContext);
+        super(tripContext, Status.ChoosePayment);
     }
 
     @Override

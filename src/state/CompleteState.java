@@ -2,7 +2,7 @@ package state;
 
 public class CompleteState extends TripState {
     protected CompleteState(TripContext tripContext) {
-        super(tripContext);
+        super(tripContext, Status.Complete);
     }
 
     @Override

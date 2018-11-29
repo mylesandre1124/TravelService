@@ -4,7 +4,7 @@ import decorator.*;
 
 public class ShowItineraryState extends TripState {
     protected ShowItineraryState(TripContext tripContext) {
-        super(tripContext);
+        super(tripContext, Status.ShowItinerary);
     }
 
     @Override

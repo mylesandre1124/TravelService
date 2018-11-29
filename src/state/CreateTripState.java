@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class CreateTripState extends TripState {
     protected CreateTripState(TripContext tripContext) {
-        super(tripContext);
+        super(tripContext, Status.CreateTrip);
 
         Trip trip = new Trip();
         trip.setStatus(Status.CreateTrip);

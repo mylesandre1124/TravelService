@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class AddPackagesState extends TripState {
     protected AddPackagesState(TripContext tripContext) {
-        super(tripContext);
+        super(tripContext, Status.AddPackages);
     }
 
     @Override

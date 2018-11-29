@@ -10,4 +10,11 @@ public class CreditCardPayment extends Payment {
         this.cardNumber = cardNumber;
         this.expirationDate = expiration;
     }
+
+    @Override
+    public String toString() {
+        return "Credit Card: \nCard Number: " + cardNumber
+                + "\nExpiration Date: " + expirationDate +
+                "\nAmount: " + getAmountPaid() + "\n";
+    }
 }

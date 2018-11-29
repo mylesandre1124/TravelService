@@ -7,8 +7,12 @@ public abstract class TripState {
 
     private TripContext tripContext;
 
-    protected TripState(TripContext tripContext) {
+    protected TripState(TripContext tripContext, Status status) {
         this.tripContext = tripContext;
+        if (this.tripContext.getTrip() != null) {
+            tripContext.getTrip().setStatus(status);
+        }
+
     }
 
     public TripContext getTripContext() {
@@ -21,6 +25,7 @@ public abstract class TripState {
         CreateTrip,
         AddTravellers,
         AddPackages,
+        ChoosePayment,
         AcceptPaymentCash,
         AcceptPaymentCheck,
         AcceptPaymentCreditCard,

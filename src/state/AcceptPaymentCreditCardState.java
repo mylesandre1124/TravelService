@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class AcceptPaymentCreditCardState extends TripState {
     protected AcceptPaymentCreditCardState(TripContext tripContext) {
-        super(tripContext);
+        super(tripContext, Status.AcceptPaymentCreditCard);
     }
 
     @Override
