@@ -22,7 +22,7 @@ public class TravellersDecorator extends ItineraryDecorator {
         System.out.println(travellerList.size() + " Traveller(s)");
 
         for (int i = 0; i < travellerList.size(); i++) {
-            System.out.println(i + ") " + travellerList.get(i).getName());
+            System.out.println(i + ". " + travellerList.get(i).getName());
         }
 
         System.out.println();
