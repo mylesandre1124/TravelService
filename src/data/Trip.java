@@ -4,21 +4,29 @@ import state.TripState;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class Trip {
 
-    private long id;
+    private String id;
     private List<Traveller> travellers = new ArrayList<>();
     private List<Package> packages = new ArrayList<>();
     private Bill bill = new Bill();
     private Payment payment;
     private TripState.Status status;
     private String thankYouNote;
+
+
     private Person reserver;
 
     public Trip() {
-        //this.id =
+        this.id = UUID.randomUUID().toString();
     }
+
+    public String getId() {
+        return id;
+    }
+
 
     public void addTraveller(Traveller traveller) {
         if (!travellers.contains(traveller)) {
